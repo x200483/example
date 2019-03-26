@@ -1,8 +1,8 @@
-<!測試第二頁>
+<!doctype html>
 <html lang="ct-TW">
     <head>
         <meta charset="utf-8">		<!-- 文字編碼 -->
-        <title>測試首頁</title>    <!-- 頁面標題 -->
+        <title>測試第二頁</title>    <!-- 頁面標題 -->
     </head>
     <body>		
 	    <h2 style="color:#E9967A">歡迎來到第二頁面</h2>
@@ -29,12 +29,15 @@
 		 <br>
 		 <hr>
 		
-		 搜尋<br> <!--搜尋功能測試-->
-		 <form action="https://www.google.com/search?q=">
-		 關鍵字<input name="q">&nbsp;<br>
-		 </form>
+		 Google搜尋<br> <!--搜尋功能測試-->
+		 <form action="https://www.google.com/search?q="target="_blank">
+			   <input name="q">&nbsp
+			   <input type="submit" value="送出">
+		 </form><hr>
 			
 		 <form> <!--選項測試-->
+		  <fieldset>
+			<legend>個人資料</legend><br>
 			性別<br>
 			<input name="sex" type="radio">男性
 			<input name="sex" type="radio">女性
@@ -48,9 +51,9 @@
 			興趣<br>
 			<input name="interest" type="checkbox"> 電玩<br>
 			<input name="interest" type="checkbox"> 棒球<br>
-			<input name="interest" type="checkbox"> 羽球<br><br>
+		  </fieldset>
 		 </form>
 		 
-	<a href="test.html"> 上一頁 </a> &nbsp <a href="#top"> 回到置頂 </a>
+	<a href="test.html"> 上一頁 </a> &nbsp <a href="#top"> 回到置頂 </a> &nbsp <a href="next3.html"> 下一頁 </a>
     </body>
 </html>	
