@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf8">
+	<title>測驗題目</title>
+</head>
+<aside></aside>
+<body>
+
+	<h3>題目練習</h3>
+	<p>完成表單</p>
+	<form>
+		<fieldset>
+		<legend>個人資訊</legend>
+		姓名：<input name="name" type="text"><br>
+		性別：<input name="sex" type="radio" value="男">男 <input name="sex" type="radio" value="女">女 <br>
+		最高學歷 ：<select name="education[]" size="4" multiple>
+						<option value="高中或以下">高中或以下
+						<option value="大專院校">大專院校
+						<option value="碩士">碩士
+						<option value="博士">博士
+					</select>
+		</fieldset><br>
+		
+		<fieldset>
+		<legend>其他資訊</legend>
+		<p>您喜歡下列哪些活動(可複選)?</p>
+			<input name="activity" type="checkbox" value="閱讀">閱讀
+			<input name="activity" type="checkbox" value="打球">打球
+			<input name="activity" type="checkbox" value="逛街">逛街
+			<input name="activity" type="checkbox" value="聽音樂">聽音樂
+			<input name="activity" type="checkbox" value="水上活動">水上運動
+			<input name="activity" type="checkbox"value="旅行">旅行<br>
+		<p>您對於使用臉書經營社群有何看法?</p>
+			<textarea name="userview" cols="45" rows="5"></textarea>
+		</fieldset><br>
+		<button type="submit">傳送資料</button> <button type="reset">清除資料 </button>
+	</form>
+
+		
+</body>
+</html>
