@@ -1,0 +1,98 @@
+<!doctype html>
+<html>	
+<head>
+	<meta charset="utf8">
+	<title>CSS測試</title>
+	<style> 
+		a {color:blue;}
+		a:link{color:red}
+		a:visited{color:black}
+		a:hover{color:yellow}
+		a:active{color:black}
+	
+		#head {font-family:標楷體; font-size:35px; color:blue; background-color:azure;}
+		#head:hover{font-size:36px; color:black;}
+		#head2{font-family:標楷體; font-size:35px; color:brown; background-color:azure;}
+		#head2:hover{font-size:36px; color:black;}
+		#content{font-family:fantasy; font-size:20px; color:red;}
+		
+		#image{width:500px; height:500px; background-color:white; background-image:url("../image/mhw2.jpg"); background-size:contain; background-repeat: no-repeat;}
+		#image:hover{width:500px; height:500px; background-color:white; background-image:url("../image/mhw1.jpeg"); background-size:contain; background-repeat:no-repeat;}
+		
+		#box1
+		 {display:inline-block; background-color:blue; width:200px; height:200px; }
+		#box2
+		 {display:inline-block; background-color:black; width:200px; height:200px; }
+		#box3
+		 {display:inline-block; background-color:red; width:200px; height:200px; }
+		#box4
+		 {display:block; background-color:yellow; width:200px; height:200px; }
+		#box5
+		 {display:block; background-color:brown; width:200px; height:200px; position:relative; left:204px; top:-200px; }
+		 
+	 #test {
+    position:relative;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background: #f00;
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite
+	}
+	 
+@-webkit-keyframes bounce {
+  from,
+  20%,
+  53%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  40%,
+  43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0);
+  }
+}
+
+	
+	</style>
+</head>
+<body style="height:1920px; width:1920px;">
+	<h3 id="head">標題測試</h3>
+		<p id="content">fantasy</p>
+	<h3 id="head2">圖片HOVER測試</h3>
+	<div id="image"></div>
+			
+	<h3 id="head">位置測試</h3>
+	<div id="box1">測試</div>
+	<div id="box2">測試2</div>
+	<div id="box3">測試3</div>
+	<div id="box4">測試4</div>
+	<div id="box5">測試5</div>
+	<div id="test">CSS動畫測試</div>
+	<div></div>
+	
+	
+	
+</body>
+</html>
